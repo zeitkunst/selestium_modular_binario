@@ -5,6 +5,9 @@
 			<div class="page__content page__content--notitle">{{ . }}</div>
 		</div>
 		{{- end }}
+        <div class="page block" style="text-align: center;">
+            <img width="60%" src="/logo/logo_sticker.png" alt="logo for selestium modular"/>
+        </div>
 		{{- $mainSections := .Site.Params.mainSections }}
 		{{- $paginator := .Paginate (where .Site.RegularPages "Type" "in" $mainSections) }}
 		{{- if gt $paginator.TotalNumberOfElements 0 }}
